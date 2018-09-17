@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ </head>
+<body>
+    <script lang="text/javascript">
+
+        window.document.write("Hello World!");
+        var myName = "Stan";
+        document.write("<br/>" + myName);
+
+        // for debugging
+        console.log(myName); // logs myName variable
+    </script>
+    <p onclick="alert('you clicked me');">Click here</p> <!-- onclick event -->
+    <p onclick="alert(document.getElementById('rose').src);">The source</p> <!--Shows the directory of the file int he alert box -->
+    <p onclick="document.getElementById('rose').src = 'fish.jpg';">Change the source</p> <!-- changing rose to fish pic -->
+    
+    <img src="rose.jpg" alt="rose" id="rose">
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
